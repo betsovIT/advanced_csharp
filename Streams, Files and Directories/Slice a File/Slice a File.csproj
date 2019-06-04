@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Word_Count</RootNamespace>
+    <RootNamespace>Slice_a_File</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,10 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="files\text.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="files\words.txt">
+    <None Update="files\sliceMe.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Word_Count</RootNamespace>
+    <RootNamespace>Merge_Files</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="files\text.txt">
+    <None Update="files\FileOne.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\words.txt">
+    <None Update="files\FileTwo.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
