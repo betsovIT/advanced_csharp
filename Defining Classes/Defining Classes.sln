@@ -25,15 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateModifier", "DateModifie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyRoster", "CompanyRoster\CompanyRoster.csproj", "{31D80D91-7562-45EB-9F2E-E17A8F24DC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedRacing", "SpeedRacing\SpeedRacing.csproj", "{A2FAAB24-7595-4143-9977-A77B03AFD3C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedRacing", "SpeedRacing\SpeedRacing.csproj", "{A2FAAB24-7595-4143-9977-A77B03AFD3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawData", "RawData\RawData.csproj", "{1A67612B-B626-47EA-B4FC-188198123BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RawData", "RawData\RawData.csproj", "{1A67612B-B626-47EA-B4FC-188198123BC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleIntersection", "RectangleIntersection\RectangleIntersection.csproj", "{0524ABFF-64E8-4D46-8CF0-5F64ECE1A765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RectangleIntersection", "RectangleIntersection\RectangleIntersection.csproj", "{0524ABFF-64E8-4D46-8CF0-5F64ECE1A765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSalesman", "CarSalesman\CarSalesman.csproj", "{EC726A8E-05BA-40AF-A12E-023B510A56B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSalesman", "CarSalesman\CarSalesman.csproj", "{EC726A8E-05BA-40AF-A12E-023B510A56B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonTrainer", "PokemonTrainer\PokemonTrainer.csproj", "{0866681B-DB64-4D1F-BC05-DD3DFC912BF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonTrainer", "PokemonTrainer\PokemonTrainer.csproj", "{0866681B-DB64-4D1F-BC05-DD3DFC912BF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniParking", "SoftUniParking\SoftUniParking.csproj", "{B4B2EAB7-1203-4BC1-A5A2-56C4C8CADB3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{0866681B-DB64-4D1F-BC05-DD3DFC912BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0866681B-DB64-4D1F-BC05-DD3DFC912BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0866681B-DB64-4D1F-BC05-DD3DFC912BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B2EAB7-1203-4BC1-A5A2-56C4C8CADB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B2EAB7-1203-4BC1-A5A2-56C4C8CADB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B2EAB7-1203-4BC1-A5A2-56C4C8CADB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B2EAB7-1203-4BC1-A5A2-56C4C8CADB3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
