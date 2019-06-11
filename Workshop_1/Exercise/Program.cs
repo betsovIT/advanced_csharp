@@ -6,7 +6,16 @@ namespace Exercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var doublyLinkedList = new DobulyLinkedList();
+
+            doublyLinkedList.AddFirst(1);
+            doublyLinkedList.AddFirst(2);
+            doublyLinkedList.AddFirst(3);
+
+            doublyLinkedList.RemoveFirst();
+
+            doublyLinkedList.Print(Console.WriteLine);
+            Console.WriteLine(doublyLinkedList.Count == 3);
         }
     }
 }

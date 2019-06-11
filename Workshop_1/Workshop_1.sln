@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomStructures", "Lab\Cus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "Exercise\Exercise.csproj", "{6743D2D1-7EBE-4DE0-B964-09B83C87A7B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaptopShop", "LaptopShop\LaptopShop.csproj", "{0FB1CC3C-92C7-4E50-B09A-E0514094DA46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6743D2D1-7EBE-4DE0-B964-09B83C87A7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6743D2D1-7EBE-4DE0-B964-09B83C87A7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6743D2D1-7EBE-4DE0-B964-09B83C87A7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB1CC3C-92C7-4E50-B09A-E0514094DA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB1CC3C-92C7-4E50-B09A-E0514094DA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB1CC3C-92C7-4E50-B09A-E0514094DA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB1CC3C-92C7-4E50-B09A-E0514094DA46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
