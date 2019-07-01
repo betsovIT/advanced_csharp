@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Rectangle.zip" />
+    <None Remove="StudentSystem.zip" />
   </ItemGroup>
 
 </Project>

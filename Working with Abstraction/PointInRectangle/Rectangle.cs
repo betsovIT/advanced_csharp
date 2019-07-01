@@ -6,20 +6,21 @@ namespace PointInRectangle
 {
     public class Rectangle
     {
-        public Point TopLeft { get; set; }
-        public Point BottomRight { get; set; }
+        public Point LowerLeft { get; set; }
+        public Point TopRight { get; set; }
 
-        public Rectangle(Point topLeft, Point bottomRight)
+        public Rectangle(Point lowerLeft, Point topRight)
         {
-            TopLeft = topLeft;
-            BottomRight = bottomRight;
+            LowerLeft = lowerLeft;
+            TopRight = topRight;
         }
         public bool Contains(Point point)
         {
-            bool insideByX = point.CoordinateX >= TopLeft.CoordinateX 
-                                && point.CoordinateX <= BottomRight.CoordinateX;
+            bool insideByX = point.CoordinateX >= LowerLeft.CoordinateX 
+                                && point.CoordinateX <= TopRight.CoordinateX;
 
-            bool insideByY = point.CoordinateX >= TopLeft.CoordinateY && point.CoordinateY <= BottomRight.CoordinateY;
+            bool insideByY = point.CoordinateY >= LowerLeft.CoordinateY 
+                                && point.CoordinateY <= TopRight.CoordinateY;
 
             return insideByX && insideByY;
         }

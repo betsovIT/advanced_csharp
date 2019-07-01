@@ -19,9 +19,18 @@ namespace RhombusOfStars
             }
         }
 
-        private static void printRow(int starts, int totalStars)
+        private static void printRow(int stars, int totalStars)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < totalStars-stars; i++)
+            {
+                Console.Write(' ');
+            }
+
+            for (int i = 1; i < stars; i++)
+            {
+                Console.Write("* ");
+            }
+            Console.WriteLine("*");
         }
     }
 }
