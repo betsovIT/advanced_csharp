@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Restaurant
 {
+    
     class Fish : MainDish
     {
-        public decimal FishGrams { get; set; }
-
-        public Fish(string name, decimal price, double grams)
-            :base(name,price,grams)
+        const double FishGrams = 22;
+        public Fish(string name, decimal price)
+            :base(name,price,FishGrams)
         {
-            FishGrams = 22;
+            
         }
     }
 }

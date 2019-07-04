@@ -7,10 +7,10 @@ namespace Restaurant
     class Dessert : Food
     {
         public double Calories { get; set; }
-        public Dessert(string name, decimal price, double grams, double caolories)
+        public Dessert(string name, decimal price, double grams, double calories)
             :base(name,price,grams)
         {
-            Calories = caolories;
+            Calories = calories;
         }
     }
 }

@@ -14,14 +14,14 @@ namespace Person
             }
             set
             {
-                if (value >= 15)
-                {
-                    throw new ArgumentException("Child's age must be less than 15!");
-                }
-                else
-                {
+                //if (value > 15)
+                //{
+                //    throw new ArgumentException("Child's age must be less than 15!");
+                //}
+                //else
+                //{
                     base.Age = value;
-                }
+                //}
             }
         }
         public Child(string name, int age)

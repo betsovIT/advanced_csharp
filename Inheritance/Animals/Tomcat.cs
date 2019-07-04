@@ -6,10 +6,11 @@ namespace Animals
 {
     class Tomcat : Cat
     {
+        const string TomcatGender = "Male";
         public Tomcat(string name, int age, string gender)
-            : base(name, age, gender)
+            : base(name, age, TomcatGender)
         {
-            base.gender = "Male";
+            
         }
 
         public override void ProduceSound()

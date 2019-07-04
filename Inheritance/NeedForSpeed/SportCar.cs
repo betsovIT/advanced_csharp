@@ -6,16 +6,12 @@ namespace NeedForSpeed
 {
     class SportCar : Car
     {
-        public double DefaultFuelConsumption
+        public override double FuelConsumption => 10;
+
+        public SportCar(int horsePower, double fuel)
+            : base(horsePower, fuel)
         {
-            get
-            {
-                return defaultFuelConsumption = 10;
-            }
-            set
-            {
-                defaultFuelConsumption = value;
-            }
+
         }
     }
 }

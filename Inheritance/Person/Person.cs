@@ -26,7 +26,6 @@ namespace Person
                 }
             }
         }
-
         public virtual int Age
         {
             get
@@ -35,7 +34,7 @@ namespace Person
             }
             set
             {
-                if (value <= 0)
+                if (value < 0)
                 {
                     throw new ArgumentException("Age must be positive!");
                 }

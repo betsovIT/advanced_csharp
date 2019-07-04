@@ -6,10 +6,11 @@ namespace Animals
 {
     class Kitten : Cat
     {
+        const string KittenGender = "Female";
         public Kitten(string name, int age, string gender)
-            : base(name, age, gender)
+            : base(name, age, KittenGender)
         {
-            base.gender = "Female";
+            
         }
 
         public override void ProduceSound()

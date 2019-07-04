@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Animals
 {
@@ -7,7 +8,7 @@ namespace Animals
     {
         static void Main(string[] args)
         {
-            var animals = new List<Animal>();
+            var sb = new StringBuilder();
 
             while (true)
             {
@@ -23,30 +24,30 @@ namespace Animals
                 string[] parameters = Console.ReadLine()
                     .Split();
 
-                if (int.Parse(parameters[1]) < 1 || (parameters[2] != "Male" && parameters[2] != "Female"))
-                {
-                    Console.WriteLine("Invalid input!");
-                    continue;
-                }
+                //if (int.Parse(parameters[1]) < 1 || (parameters[2] != "Male" && parameters[2] != "Female"))
+                //{
+                //    sb.AppendLine("Invalid input!");
+                //    continue;
+                //}
 
                 try
                 {
                     switch (animalType)
                     {
                         case "Dog":
-                            animals.Add(new Dog(parameters[0], int.Parse(parameters[1]), parameters[2]));
+                            sb.AppendLine(new Dog(parameters[0], int.Parse(parameters[1]), parameters[2]).ToString());
                             break;
                         case "Cat":
-                            animals.Add(new Cat(parameters[0], int.Parse(parameters[1]), parameters[2]));
+                            sb.AppendLine(new Cat(parameters[0], int.Parse(parameters[1]), parameters[2]).ToString());
                             break;
                         case "Frog":
-                            animals.Add(new Frog(parameters[0], int.Parse(parameters[1]), parameters[2]));
+                            sb.AppendLine(new Frog(parameters[0], int.Parse(parameters[1]), parameters[2]).ToString());
                             break;
                         case "Kitten":
-                            animals.Add(new Kitten(parameters[0], int.Parse(parameters[1]), parameters[2]));
+                            sb.AppendLine(new Kitten(parameters[0], int.Parse(parameters[1]), parameters[2]).ToString());
                             break;
                         case "Tomcat":
-                            animals.Add(new Tomcat(parameters[0], int.Parse(parameters[1]), parameters[2]));
+                            sb.AppendLine(new Tomcat(parameters[0], int.Parse(parameters[1]), parameters[2]).ToString());
                             break;
                         default:
                             break;
@@ -55,16 +56,13 @@ namespace Animals
                 catch (Exception ae)
                 {
 
-                    Console.WriteLine(ae.Message);
-                }
-                
+                    sb.AppendLine(ae.Message);
+                }                
             }
 
-            foreach (var animal in animals)
-            {
-                Console.WriteLine(animal);
-                animal.ProduceSound();
-            }
+            Console.WriteLine(sb.ToString());
+
+            
         }
     }
 }

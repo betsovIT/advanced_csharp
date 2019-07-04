@@ -5,17 +5,15 @@ using System.Text;
 namespace Restaurant
 {
     class Cake : Dessert
-    {
-        public double CakeGrams { get; set; }
-        public double CakeCalories { get; set; }
-        public decimal CakePrice { get; set; }
+    {        
+        const double CakeGrams = 250;
+        const double CakeCalories = 1000;
+        const decimal CakePrice = 5;
 
-        public Cake(string name, decimal price, double grams, double calories)
-            :base(name,price,grams, calories)
+        public Cake(string name)
+            :base(name,CakePrice,CakeGrams, CakeCalories)
         {
-            CakeGrams = 250;
-            CakeCalories = 1000;
-            CakePrice = 5m;
+
         }
     }
 }
