@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortPersonsByNameAndAge", "SortPersonsByNameAndAge\SortPersonsByNameAndAge.csproj", "{72FBB6CB-DCAB-4364-B1C8-24265A4A46C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortPersonsByNameAndAge", "SortPersonsByNameAndAge\SortPersonsByNameAndAge.csproj", "{72FBB6CB-DCAB-4364-B1C8-24265A4A46C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salary", "Salary\Salary.csproj", "{1D0FE11C-CFF3-43A5-84B6-EFF32BC50323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Salary", "Salary\Salary.csproj", "{1D0FE11C-CFF3-43A5-84B6-EFF32BC50323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationOfData", "ValidationOfData\ValidationOfData.csproj", "{0C9E4FDF-1DB5-4F2D-B1F5-E9462A87E5BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationOfData", "ValidationOfData\ValidationOfData.csproj", "{0C9E4FDF-1DB5-4F2D-B1F5-E9462A87E5BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team", "Team\Team.csproj", "{EF94E35E-6270-4E8E-8ED3-9A1C7C6FC88C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Team", "Team\Team.csproj", "{EF94E35E-6270-4E8E-8ED3-9A1C7C6FC88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{D1632F35-8E85-46C3-8709-2FC08EFC8CEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalFarm", "AnimalFarm\AnimalFarm.csproj", "{1BCD9B41-A36A-46DE-8F40-268979453694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingSpree", "ShoppingSpree\ShoppingSpree.csproj", "{E4FE8DB0-F3A8-4605-8E54-F4DAAEE3794B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaCalories", "PizzaCalories\PizzaCalories.csproj", "{0A0C6224-CF32-406A-AE54-437633BAA4F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{EF94E35E-6270-4E8E-8ED3-9A1C7C6FC88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF94E35E-6270-4E8E-8ED3-9A1C7C6FC88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF94E35E-6270-4E8E-8ED3-9A1C7C6FC88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1632F35-8E85-46C3-8709-2FC08EFC8CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1632F35-8E85-46C3-8709-2FC08EFC8CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1632F35-8E85-46C3-8709-2FC08EFC8CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1632F35-8E85-46C3-8709-2FC08EFC8CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BCD9B41-A36A-46DE-8F40-268979453694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BCD9B41-A36A-46DE-8F40-268979453694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BCD9B41-A36A-46DE-8F40-268979453694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BCD9B41-A36A-46DE-8F40-268979453694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FE8DB0-F3A8-4605-8E54-F4DAAEE3794B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FE8DB0-F3A8-4605-8E54-F4DAAEE3794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FE8DB0-F3A8-4605-8E54-F4DAAEE3794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FE8DB0-F3A8-4605-8E54-F4DAAEE3794B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0C6224-CF32-406A-AE54-437633BAA4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0C6224-CF32-406A-AE54-437633BAA4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0C6224-CF32-406A-AE54-437633BAA4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0C6224-CF32-406A-AE54-437633BAA4F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
