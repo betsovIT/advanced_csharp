@@ -28,23 +28,27 @@ namespace PizzaCalories
                 switch (value.ToLower())
                 {
                     case "meat":
-                        type = "meat";
+                        type = "Meat";
+                        modifier = meatModifier;
                         break;
                     case "veggies":
-                        type = "veggies";
+                        type = "Veggies";
+                        modifier = veggiesModifier;
                         break;
                     case "cheese":
-                        type = "cheese";
+                        type = "Cheese";
+                        modifier = cheesetModifier;
                         break;
                     case "sauce":
-                        type = "sauce";
+                        type = "Sauce";
+                        modifier = sauceModifier;
                         break;
                     default:
                         throw new ArgumentException($"Cannot place {value} on top of your pizza.");
                 }
             }
         }
-         
+
         private double Grams
         {
             set
@@ -57,6 +61,14 @@ namespace PizzaCalories
                 {
                     this.grams = value;
                 }
+            }
+        }
+
+        public double Calories
+        {
+            get
+            {
+                return 2 * this.grams * this.modifier;
             }
         }
 
