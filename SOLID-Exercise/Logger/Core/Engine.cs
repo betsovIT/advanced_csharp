@@ -12,11 +12,13 @@ namespace Logger.Core
         private ErrorFactory errorFactory;
 
         public Engine()
+            
         {
             this.errorFactory = new ErrorFactory();
         }
 
         public Engine(ILogger logger)
+            : this()
         {
             this.logger = logger;
         }

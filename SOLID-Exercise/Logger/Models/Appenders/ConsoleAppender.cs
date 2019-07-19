@@ -9,7 +9,7 @@ namespace Logger.Models.Appenders
 {
     public class ConsoleAppender : IAppender
     {
-        private const string dateFormat = "M/dd/yyyy H:mm:ss tt";
+        private const string dateFormat = "M/dd/yyyy h:mm:ss tt";
 
         private int messagesAppended;
 

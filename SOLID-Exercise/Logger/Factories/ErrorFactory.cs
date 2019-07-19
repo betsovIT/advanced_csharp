@@ -29,7 +29,7 @@ namespace Logger.Factories
             {
                 dateTime = DateTime.ParseExact(dateString, dateFormat, CultureInfo.InvariantCulture);
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 throw new InvalidDateFormatException();
