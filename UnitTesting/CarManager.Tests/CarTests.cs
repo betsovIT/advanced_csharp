@@ -1,5 +1,5 @@
 using NUnit.Framework;
-//using CarManager;
+using CarManager;
 using System;
 
 namespace Tests
@@ -84,6 +84,12 @@ namespace Tests
         public void TestRefuelingWithNegativeNumber()
         {
             Assert.Throws<ArgumentException>(() => car.Refuel(-5), "Fuel amount cannot be zero or negative!");
+        }
+
+        [Test]
+        public void TestRefuelingWithZero()
+        {
+            Assert.Throws<ArgumentException>(() => car.Refuel(0), "Fuel amount cannot be zero or negative!");
         }
 
         [Test]
