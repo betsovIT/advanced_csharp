@@ -7,14 +7,14 @@ namespace MXGP.Models.Motorcycles
 {
     public class SpeedMotorcycle : Motorcycle
     {
-        private const double standartCubics = 125;
-        private const int minHP = 50;
-        private const int maxHP = 69;
+        private const int minSpeedHorsePower = 50;
+        private const int maxSpeedHorsePower = 69;
+        private const double speedCubicCentimeters = 125;
 
-        public SpeedMotorcycle(string model, int horsePower) 
-            : base(model, horsePower, standartCubics)
+        public SpeedMotorcycle(string model, int horsePower)
+            : base(model, speedCubicCentimeters)
         {
-            this.HorsePower = horsePower;
+            HorsePower = horsePower;
         }
 
         public override int HorsePower
@@ -25,9 +25,9 @@ namespace MXGP.Models.Motorcycles
             }
             protected set
             {
-                if (value < minHP || value > maxHP)
+                if (value < minSpeedHorsePower || value > maxSpeedHorsePower)
                 {
-                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidHorsePower,value));
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidHorsePower, value));
                 }
                 else
                 {

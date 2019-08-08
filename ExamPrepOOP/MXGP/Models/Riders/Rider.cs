@@ -10,8 +10,6 @@ namespace MXGP.Models.Riders
     public class Rider : IRider
     {
         private string name;
-        private int numberOfWins;
-        private IMotorcycle motorcycle;
 
         public Rider(string name)
         {
@@ -28,7 +26,7 @@ namespace MXGP.Models.Riders
             {
                 if (string.IsNullOrEmpty(value) || value.Length < 5)
                 {
-                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName,value,5));
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName, value, 5));
                 }
                 else
                 {
@@ -37,53 +35,27 @@ namespace MXGP.Models.Riders
             }
         }
 
-        public IMotorcycle Motorcycle
-        {
-            get
-            {
-                return this.motorcycle;
-            }
-            private set
-            {
-                if (value is null)
-                {
-                    throw new ArgumentNullException(ExceptionMessages.MotorcycleInvalid);
-                }
-                else
-                {
-                    this.motorcycle = value;
-                }
-            }
-        }
+        public IMotorcycle Motorcycle { get; private set; }
 
-        public int NumberOfWins
-        {
-            get
-            {
-                return this.numberOfWins;
-            }
-            private set
-            {
-                this.numberOfWins = value;
-            }
-        }
+        public int NumberOfWins { get; private set; }
 
-        public bool CanParticipate
-        {
-            get
-            {
-                return this.Motorcycle != null;
-            }
-        }
+        public bool CanParticipate => Motorcycle != null;
 
         public void AddMotorcycle(IMotorcycle motorcycle)
         {
-            this.Motorcycle = motorcycle;
+            if (motorcycle is null)
+            {
+                throw new ArgumentNullException(ExceptionMessages.MotorcycleInvalid);
+            }
+            else
+            {
+                Motorcycle = motorcycle;
+            }
         }
 
         public void WinRace()
         {
-            NumberOfWins += 1;
+            NumberOfWins++;
         }
     }
 }

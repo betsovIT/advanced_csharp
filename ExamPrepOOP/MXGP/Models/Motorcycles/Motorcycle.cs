@@ -12,11 +12,10 @@ namespace MXGP.Models.Motorcycles
         private int horsePower;
         private double cubicCentimeters;
 
-        public Motorcycle(string model,int horsePower, double cubicCentimeters)
+        public Motorcycle(string model, double cubicCentimeters)
         {
             this.Model = model;
-            this.HorsePower = horsePower;
-            this.cubicCentimeters = cubicCentimeters;
+            this.CubicCentimeters = cubicCentimeters;
         }
 
         public string Model
@@ -27,9 +26,9 @@ namespace MXGP.Models.Motorcycles
             }
             private set
             {
-                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value) || value.Length < 4)
+                if (string.IsNullOrWhiteSpace(value) || value.Length < 4)
                 {
-                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidModel,value,4));
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidModel, value, 4));
                 }
                 else
                 {
@@ -44,17 +43,27 @@ namespace MXGP.Models.Motorcycles
             {
                 return this.horsePower;
             }
-            protected set
+            protected  set
             {
                 this.horsePower = value;
             }
         }
 
-        public double CubicCentimeters => this.cubicCentimeters;
+        public double CubicCentimeters
+        {
+            get
+            {
+                return this.cubicCentimeters;
+            }
+            private set
+            {
+                this.cubicCentimeters = value;
+            }
+        }
 
         public double CalculateRacePoints(int laps)
         {
-            return this.CubicCentimeters / HorsePower * laps;
+            return this.CubicCentimeters / this.HorsePower * laps;
         }
     }
 }

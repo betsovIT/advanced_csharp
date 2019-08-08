@@ -1,10 +1,9 @@
 ﻿using MXGP.Models.Races.Contracts;
 using MXGP.Models.Riders.Contracts;
+using MXGP.Repositories;
 using MXGP.Utilities.Messages;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using System.Text;
 
 namespace MXGP.Models.Races
@@ -13,13 +12,13 @@ namespace MXGP.Models.Races
     {
         private string name;
         private int laps;
-        private List<IRider> riders;
+        private RiderRepository riderRepository;
 
         public Race(string name, int laps)
         {
             this.Name = name;
             this.Laps = laps;
-            riders = new List<IRider>();
+            riderRepository = new RiderRepository();
         }
         public string Name
         {
@@ -31,7 +30,7 @@ namespace MXGP.Models.Races
             {
                 if (string.IsNullOrEmpty(value) || value.Length < 5)
                 {
-                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName,value,5));
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName, value, 5));
                 }
                 else
                 {
@@ -50,7 +49,7 @@ namespace MXGP.Models.Races
             {
                 if (value < 1)
                 {
-                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidNumberOfLaps,1));
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidNumberOfLaps, value));
                 }
                 else
                 {
@@ -59,26 +58,11 @@ namespace MXGP.Models.Races
             }
         }
 
-        public IReadOnlyCollection<IRider> Riders => new ReadOnlyCollection<IRider>(riders);
+        public IReadOnlyCollection<IRider> Riders => riderRepository.GetAll();
 
         public void AddRider(IRider rider)
         {
-            if (rider is null)
-            {
-                throw new ArgumentNullException(string.Format(ExceptionMessages.RiderInvalid));
-            }
-            else if (rider.Motorcycle is null)
-            {
-                throw new ArgumentException(string.Format(ExceptionMessages.RiderNotParticipate,rider.Name));
-            }
-            else if (riders.Any(r => r.Name == rider.Name))
-            {
-                throw new ArgumentNullException(string.Format(ExceptionMessages.RiderAlreadyAdded,rider.Name,this.Name));
-            }
-            else
-            {
-                riders.Add(rider);
-            }            
+            riderRepository.Add(rider);
         }
     }
 }

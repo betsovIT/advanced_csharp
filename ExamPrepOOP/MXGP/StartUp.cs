@@ -4,8 +4,6 @@ namespace MXGP
 {
     using Models.Motorcycles;
     using MXGP.Core;
-    using System.Linq;
-    using System.Reflection;
 
     public class StartUp
     {
@@ -13,6 +11,6 @@ namespace MXGP
         {
             var engine = new Engine();
             engine.Run();
-        }   
+        }
     }
 }
